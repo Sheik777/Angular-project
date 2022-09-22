@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Country and Capital</title>
+</head>
+<style>
+    * {
+        background: linear-gradient(45deg, #61d3c9, #557da5);
+        border-radius: 20px;
+        padding: 5px;
+
+    }
+    .country{
+        text-align: center;
+        width: 100%;
+        margin: 10px;
+        border: none;
+        background-color: rgb(218, 47, 47);
+        font-weight: bold;
+        color: black
+
+    }
+    .country2{
+        text-align: center;
+        width: 100%;
+        margin: 10px;
+        border: none;
+        background-color: rgb(218, 47, 47);
+        font-weight: bold;
+        color: black
+
+    }
+
+ 
+</style>
+
+<body>
+    <div>
+        <h1 style="text-align:center ;"> Country and Capital </h1>
+    </div>
+    <div class="country">
+        <label> Country  </label>
+        <select name="city1" id="s1" onchange="change()">
+            <option value="">--choose Country-- </option>
+            <option value="ind"> India </option>
+            <option value="sk"> south korea </option>
+            <option value="ger"> Germany </option>
+            <option value="lux"> Luxermberg </option>
+            <option value="fran"> France </option>
+            <option value="jap"> Japan </option>
+        </select>
+    </div><br> <br>
+    <div class="country2">
+        <label> Capital : </label>
+
+        <select name="city2" id="s2" onchange="capital()">
+            <option value="">--choose Capital-- </option>
+            <option value="ind"> Delhi </option>
+            <option value="sk"> Seoul </option>
+            <option value="ger"> Berlin </option>
+            <option value="lux"> Letzeberg </option>
+            <option value="fran"> Paris </option>
+            <option value="jap"> Tokyo </option>
+
+        </select>
+    </div>
+
+    <script>
+ function change(){
+    var Country=document.getElementById("s1").value;
+    document.getElementById("s2").value=Country;
+
+ }
+ function capital(){
+    var Capital=document.getElementById("s2").value;
+    document.getElementById("s1").value=Capital;CSSMediaRule
+
+ }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

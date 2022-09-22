@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade</title>
+</head>
+<style>
+    * {
+        background: linear-gradient(45deg, #df87b7, #bcc8d4);
+        border-radius: 20px;
+        border-top: 1px solid rgba(red, green, blue, alpha);
+        padding: 5px;
+
+    }
+
+
+    .style {
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin: 10px;
+        border: none;
+
+    }
+
+    #grade {
+        background-color: rgb(218, 47, 47);
+        font-weight: bold;
+        color: black;
+        margin: 10px 10px;
+        padding: 7px 10px;
+        outline: none;
+    }
+
+    .demo {
+        text-align: center;
+
+    }
+    .table,tr,th,td {
+
+        height: auto;
+        text-align: center;
+        justify-content: center;
+     padding: 10px;
+        margin: 10px;
+        border:1px solid white;
+        border-collapse: collapse;
+
+        
+
+    }
+</style>
+
+<body>
+    <h1 style="text-align:center; color:black; font-family:'Times New Roman', Times, serif "> Student Grade list </h1>
+    <div class="style">
+        Enter Name : <input type="text" id="name" placeholder="Enter name" name="name" required><br><br>
+        Roll No : <input type="text" id="rollno" placeholder="Roll no" name="roll no" required><br><br>
+        Section : <input type="text" id="sec" placeholder="Section" name="section" required><br><br>
+        Standard : <input type="text" id="std" placeholder="stantard" name="stantard" required><br><br>
+        Total mark : <input type="number" id="total" required> <br><br>
+        <button id="grade" onclick="calculate()">Find Grade</button>
+    </div>
+    <!-- <p id="s" style="text-align: center; font-size: larger ;"> </p>
+    <p id="h" style="text-align: center; font-size: larger ;"> </p>
+    <p id="e" style="text-align: center; font-size: larger ;"> </p>
+    <p id="i" style="text-align: center; font-size: larger ;"> </p>
+    <p id="demo" style="text-align: center; font-size: larger ;"></p> -->
+
+    <table class="table">
+        <tr>
+            <th> Enter name </th>
+            <th> Roll no </th>
+            <th> Section </th>
+            <th> Standard </th>
+            <th> Total mark </th>
+        </tr>
+      <tr>
+        <td id="s"></td>
+        <td id="h"></td>
+        <td id="e"></td>
+        <td id="i"></td>
+        <td id="demo"></td>
+          
+    </tr>
+
+    <script src="grade.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar </title>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align:center ;"> Country and Capital </h1>
+    </div>
+    <div>
+        Year : <input type="text" id="text" placeholder="year"><br><br>
+    </div>
+    <div>
+        Month : <select name="month" id="int_month" >
+            <option value="jan">January</option>
+            <option value="feb">Febrary</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="June">June</option>
+            <option value="july">July</option>
+            <option value="aug">Auguest</option>
+            <option value="sept">Semptember</option>
+            <option value="oct">Octomber</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+        </select>
+    </div><br><br>
+
+    <div>
+        <button onclick="calc()" id="butn"> Find days</button>
+   
+        <p id="year"></p>
+        <p id="month"></p>
+        <p id="day"></p>
+    </div>
+<script src="calender.js"></script>
+
+</body>
+
+</html>
